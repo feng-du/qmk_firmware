@@ -1,0 +1,45 @@
+
+
+#pragma once
+
+
+
+/* RGB settings. */
+#define WS2812_DI_PIN D1
+#define RGBLED_NUM 42
+/* #define RGBLED_SPLIT \
+     { 21, 21 } */
+
+/* RGB matrix support. */
+#ifdef RGB_MATRIX_ENABLE
+// #    define SPLIT_TRANSPORT_MIRROR
+#    define RGB_MATRIX_LED_COUNT RGBLED_NUM
+// #    define RGB_MATRIX_SPLIT RGBLED_SPLIT
+#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 50
+#    define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS
+#    define RGB_DISABLE_WHEN_USB_SUSPENDED
+#    define RGB_MATRIX_KEYPRESSES
+#    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+/* RGB Matrix Effects */
+#define ENABLE_RGB_MATRIX_RAINBOW_BEACON
+#define ENABLE_RGB_MATRIX_RAINBOW_PINWHEELS
+#define ENABLE_RGB_MATRIX_BREATHING
+#endif
+
+/* key matrix size */
+#define MATRIX_ROWS 8
+#define MATRIX_COLS 6
+
+
+/* USB config */
+#define USB_MAX_POWER_CONSUMPTION 100
+// #define USB_COUNT_SOF 0
+// #define USB_INTR_CFG_SET (1 << ISC01)
+// #define USB_INTR_ENABLE_BIT INT0
+// #define USB_INTR_PENDING_BIT INTF0
+// #define USB_INTR_VECTOR INT0_vect
+
+
+
+
+

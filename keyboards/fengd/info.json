@@ -1,0 +1,8 @@
+{
+    "manufacturer": "Fengd Keyboards",
+    "maintainer": "Fengd",
+    "url": "",
+    "usb": {
+        "vid": "0x6664"
+    }
+}
